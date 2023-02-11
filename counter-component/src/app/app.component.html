@@ -1,1 +1,5 @@
-<sg-counter></sg-counter>
+<div id="counter-root">
+  <input type="text" [value]="counter" (change)="onTextInputChanged($event)">
+  <button (click)="increment()">+</button>
+  <button (click)="decrement()">-</button>
+</div>

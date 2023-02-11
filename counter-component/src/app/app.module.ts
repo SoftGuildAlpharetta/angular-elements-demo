@@ -3,13 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Injector } from '@angular/core';
 import { AppComponent } from './app.component';
 import { createCustomElement } from '@angular/elements';
-import { SgCounterComponent } from './sg-counter/sg-counter.component';
 
 @NgModule({
-  declarations: [AppComponent, SgCounterComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent, SgCounterComponent],
+  // bootstrap: [AppComponent],
 })
 export class AppModule {
   constructor(private injector: Injector) {
